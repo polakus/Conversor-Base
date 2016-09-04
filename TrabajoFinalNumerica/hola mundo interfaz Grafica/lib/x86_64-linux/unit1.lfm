@@ -1,0 +1,397 @@
+object ventPrinc: TventPrinc
+  Left = 349
+  Height = 421
+  Top = 64
+  Width = 416
+  Caption = 'Ventana Principal'
+  ClientHeight = 421
+  ClientWidth = 416
+  Color = clGradientInactiveCaption
+  Font.CharSet = ANSI_CHARSET
+  Font.Height = -15
+  Font.Name = 'Arial Narrow'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  LCLVersion = '1.6.0.4'
+  object NumIngr: TEdit
+    Left = 8
+    Height = 28
+    Top = 56
+    Width = 112
+    TabOrder = 0
+  end
+  object lblNumero: TLabel
+    Left = 8
+    Height = 20
+    Top = 32
+    Width = 55
+    Caption = 'Número: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial Narrow'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object BaseNumIngr: TSpinEdit
+    Left = 144
+    Height = 28
+    Top = 56
+    Width = 56
+    MaxValue = 16
+    MinValue = 2
+    TabOrder = 1
+    Value = 10
+  end
+  object lblBasIngr: TLabel
+    Left = 144
+    Height = 20
+    Top = 32
+    Width = 35
+    Caption = 'Base:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial Narrow'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label1: TLabel
+    Left = 128
+    Height = 29
+    Top = 56
+    Width = 10
+    Caption = 'x'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -24
+    Font.Name = 'Arial Narrow'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 208
+    Height = 29
+    Top = 55
+    Width = 9
+    Caption = '^'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -24
+    Font.Name = 'Arial Narrow'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object ExpNumIngr: TSpinEdit
+    Left = 224
+    Height = 28
+    Top = 56
+    Width = 72
+    MinValue = -100
+    TabOrder = 2
+  end
+  object lblExpNumIngr: TLabel
+    Left = 225
+    Height = 20
+    Top = 32
+    Width = 65
+    Caption = 'Exponente: '
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 8
+    Height = 18
+    Top = 16
+    Width = 268
+    Caption = 'INGRESE  FORMATO  DE  NUMERO : '
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clMaroon
+    Font.Height = -15
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 8
+    Height = 16
+    Top = 100
+    Width = 238
+    Caption = 'INGRESE  BASE  PARA CONVERTIR: : '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object BaseLleg: TSpinEdit
+    Left = 240
+    Height = 24
+    Top = 96
+    Width = 56
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Arial Narrow'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    MaxValue = 16
+    MinValue = 2
+    ParentFont = False
+    TabOrder = 3
+    Value = 10
+  end
+  object btnConv: TButton
+    Left = 160
+    Height = 25
+    Top = 160
+    Width = 136
+    Caption = 'Convertir'
+    Color = clHotLight
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBtnText
+    Font.Height = -15
+    Font.Name = 'Arial Narrow'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = btnConvClick
+    OnEnter = btnConvClick
+    ParentFont = False
+    TabOrder = 4
+  end
+  object Label5: TLabel
+    Left = 8
+    Height = 16
+    Top = 132
+    Width = 223
+    Caption = 'CTDAD  DIGITOS SIGNIFICATIVOS :'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object BaseNumConv1: TSpinEdit
+    Left = 240
+    Height = 24
+    Top = 128
+    Width = 56
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Arial Narrow'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    MaxValue = 32
+    MinValue = 2
+    ParentFont = False
+    TabOrder = 5
+    Value = 10
+  end
+  object Label6: TLabel
+    Left = 8
+    Height = 20
+    Top = 80
+    Width = 404
+    Caption = '-----------------------------------------------------------------------------------------------------'
+    ParentColor = False
+  end
+  object Label7: TLabel
+    Left = 8
+    Height = 20
+    Top = 144
+    Width = 404
+    Caption = '-----------------------------------------------------------------------------------------------------'
+    ParentColor = False
+  end
+  object Label8: TLabel
+    Left = 8
+    Height = 20
+    Top = 112
+    Width = 404
+    Caption = '-----------------------------------------------------------------------------------------------------'
+    ParentColor = False
+  end
+  object Label9: TLabel
+    Left = 8
+    Height = 20
+    Top = 176
+    Width = 404
+    Caption = '-----------------------------------------------------------------------------------------------------'
+    ParentColor = False
+  end
+  object Label10: TLabel
+    Left = 8
+    Height = 20
+    Top = 0
+    Width = 404
+    Caption = '-----------------------------------------------------------------------------------------------------'
+    ParentColor = False
+  end
+  object LBLmostNum: TLabel
+    Left = 8
+    Height = 20
+    Top = 192
+    Width = 149
+    Caption = 'MOSTRANDO NUMERO: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clMaroon
+    Font.Height = -15
+    Font.Name = 'Arial Narrow'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object lblMNumOr: TLabel
+    Left = 8
+    Height = 20
+    Top = 216
+    Width = 108
+    Caption = 'Numero Original: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -15
+    Font.Name = 'Arial Narrow'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object lblNumConv: TLabel
+    Left = 8
+    Height = 16
+    Top = 248
+    Width = 130
+    Caption = 'NUMERO CONVERTIDO: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Arial Narrow'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object lblFormSNorm: TLabel
+    Left = 32
+    Height = 20
+    Top = 264
+    Width = 135
+    Caption = '**Forma sin Normalizar: '
+    ParentColor = False
+  end
+  object lblFormCNorm1: TLabel
+    Left = 32
+    Height = 20
+    Top = 280
+    Width = 126
+    Caption = '**Forma Normalizada: '
+    ParentColor = False
+  end
+  object lblNumConv1: TLabel
+    Left = 8
+    Height = 16
+    Top = 304
+    Width = 199
+    Caption = 'NUMERO CONVERTIDO POR CORTE:  '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Arial Narrow'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object lblFormSinNorm1: TLabel
+    Left = 32
+    Height = 20
+    Top = 320
+    Width = 135
+    Caption = '**Forma sin Normalizar: '
+    ParentColor = False
+  end
+  object lblFormCNorm2: TLabel
+    Left = 32
+    Height = 20
+    Top = 336
+    Width = 126
+    Caption = '**Forma Normalizada: '
+    ParentColor = False
+  end
+  object lblNumConv2: TLabel
+    Left = 8
+    Height = 16
+    Top = 360
+    Width = 224
+    Caption = 'NUMERO CONVERTIDO POR REDONDEO:  '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Arial Narrow'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object lblFormSinNorm2: TLabel
+    Left = 32
+    Height = 20
+    Top = 376
+    Width = 135
+    Caption = '**Forma sin Normalizar: '
+    ParentColor = False
+  end
+  object lblFormCNorm3: TLabel
+    Left = 32
+    Height = 20
+    Top = 392
+    Width = 126
+    Caption = '**Forma Normalizada: '
+    ParentColor = False
+  end
+  object Label11: TLabel
+    Left = 8
+    Height = 20
+    Top = 288
+    Width = 404
+    Caption = '-----------------------------------------------------------------------------------------------------'
+    ParentColor = False
+  end
+  object Label12: TLabel
+    Left = 8
+    Height = 20
+    Top = 344
+    Width = 404
+    Caption = '-----------------------------------------------------------------------------------------------------'
+    ParentColor = False
+  end
+  object Label13: TLabel
+    Left = 8
+    Height = 20
+    Top = 401
+    Width = 404
+    Caption = '-----------------------------------------------------------------------------------------------------'
+    ParentColor = False
+  end
+  object Label14: TLabel
+    Left = 8
+    Height = 20
+    Top = 232
+    Width = 404
+    Caption = '-----------------------------------------------------------------------------------------------------'
+    ParentColor = False
+  end
+end
